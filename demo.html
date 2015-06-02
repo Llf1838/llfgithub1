@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo</title>
+<style type="text/css">
+  .main{
+    width:500px;
+    height:500;
+    border: 1px red solid;
+    margin:20px auto;
+  }
+</style>
+</head>
+<body>
+  <div class="main">
+    <@p.message msg/>
+    thank you let me know what kinds of person i am!
+    <p>
+      <#list data as user><br/>
+        昵称: ${user.userName}<br/>
+        电话： ${user.phoneNum}
+      </#list>
+    </p>
+    <a href="${path}/demo">我跳</a>
+  </div>
+  
+</body>
+</html>
